@@ -6,38 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
-    <RadioButton
-        android:id="@+id/RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:includeFontPadding="true"
-        android:text="Callcenter ค่ายมือถือ"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Insurer"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/radioButton5"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Mugger"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/RadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
 
     <EditText
         android:id="@+id/editText"
@@ -70,12 +38,12 @@
         android:id="@+id/button_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="ย้อนกลับ"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/type_radio_group" />
 
     <TextView
         android:id="@+id/textView2"
@@ -88,24 +56,72 @@
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
+    <RadioGroup
+        android:id="@+id/type_radio_group"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="อื่นๆ"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/RadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Callcenter ธนาคาร"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/RadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/RadioButton" />
+        <RadioButton
+            android:id="@+id/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:includeFontPadding="true"
+            android:text="Callcenter ค่ายมือถือ"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintHorizontal_bias="0.31"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Callcenter ธนาคาร"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/RadioButton"
+            app:layout_constraintTop_toBottomOf="@+id/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Insurer"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/radioButton5"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mugger"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/RadioButton"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="อื่นๆ"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/RadioButton"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
